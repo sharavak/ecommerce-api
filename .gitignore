@@ -1,0 +1,6 @@
+.vercel
+.env
+/test.js
+/vercel.json
+/node_modules
+/notes.txt
