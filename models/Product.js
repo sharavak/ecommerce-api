@@ -35,6 +35,10 @@ const ProductSchema = new mongoose.Schema({
 	},
 });
 
+ProductSchema.index({name: 1});
+ProductSchema.index({brand: 1});
+ProductSchema.index({category: 1});
+
 ProductSchema.methods.updateCart = async function () {
 	let carts = await Cart.find({"products.productId": this._id});
 	for (let c of carts) {

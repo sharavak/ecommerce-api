@@ -1,6 +1,6 @@
 .vercel
 .env
-/test.js
+/coverage
 /vercel.json
 /node_modules
 /notes.txt

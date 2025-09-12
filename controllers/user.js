@@ -2,8 +2,6 @@ import User from "../models/User.js";
 
 export const createUser = async (req, res) => {
 	try {
-		console.log(req, "fsdgfdsg");
-		
 		const {name, email, password} = req.body;
 		const isUser=await User.findOne({email:email});
 		if(isUser)
